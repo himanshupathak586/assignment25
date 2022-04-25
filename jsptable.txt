@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Table</title>
+</head>
+<body>
+<h1>Table</h1>
+<table>
+<% int a = 5;int result = 0;
+for(int i = 1; i<=10; i++){
+	result = a*i;
+	%>
+	<tr>
+		<td><%= a %></td>
+		<td>*</td>
+		<td><%= i %></td>
+		<td>=</td>
+		<td><%= result %></td>	
+	</tr>
+	<% 
+} %>
+</table>
+
+</body>
+</html>
